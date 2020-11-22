@@ -1,0 +1,74 @@
+﻿@model ProyectoFinalASP.Models.Peliculas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles de la pelicula</h2>
+
+<div>
+    <h4>Peliculas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.genero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.genero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.director)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.director)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idioma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idioma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
